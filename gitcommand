@@ -57,5 +57,8 @@ Changes
    78  git checkout calcy.py
    79  git diff
 
-
-
+stop tracking unnecessary file
+100  git reset
+  101  git status
+  102  vi .gitignore
+  103  git status
