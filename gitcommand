@@ -14,5 +14,21 @@ to install git
    13  touch calcy.py
    14  touch auth
    15  git status
+the might .git
+ 18  git status
+   19  git init
+   20  git status
+   21  history
+   22  ls
+   23  ls -la
+   24  cd .git
+   25  ls
+   26  cd ..
+   27  ls -la
+   28  git status
+   29  rm -rf .git
+   30  git status
+   31  git init
+   32  git status
 
 
