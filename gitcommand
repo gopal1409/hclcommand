@@ -1,1 +1,9 @@
+first step to become a root user 
+sudo -i
+
+once you become a root user
+to install git
+ 7  yum install git
+    8  git --version
+    9  history
 
