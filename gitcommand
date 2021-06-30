@@ -30,5 +30,15 @@ the might .git
    30  git status
    31  git init
    32  git status
+   
+   create our first commit
+      38  git config --global user.email "gopal1409@gmail.com"
+   39  git commit -m "intial commit"
+35  git add calcy.py
+   36  git commit -m "my first commit"
+   37  git config --global user.name "gopal"
+
+   40  git log
+
 
 
