@@ -40,5 +40,14 @@ the might .git
 
    40  git log
 
+Changes
+45  vi calcy.py
+   46  git status
+   47  git add calcy.py
+   48  git commit -m "second commit"
+   49  git log
+   50  vi calcy.py
+   51  git status
+   52  git diff
 
 
