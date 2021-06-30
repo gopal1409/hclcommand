@@ -49,5 +49,13 @@ Changes
    50  vi calcy.py
    51  git status
    52  git diff
+   
+   git mistake rectify using checkout
+   75  vi calcy.py
+   76  git status
+   77  git diff
+   78  git checkout calcy.py
+   79  git diff
+
 
 
