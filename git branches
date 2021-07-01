@@ -10,3 +10,21 @@
   167  git add .
   168  git commit -m "Branching Project started"
   169  git log
+How to create branches
+172  git branch
+  173  git branch calc-divide
+  174  git branch
+  175  git checkout calc-divide
+  176  git branch
+  177  vi Calcy.py
+  178  git status
+  179  vi Calcy.py
+  180  git checkout master
+  181  git branch
+  182  vi Calcy.py
+  183  git checkout calc-divide
+  184  git add .
+  185  git commit -m "added divide functionality"
+  186  git branch
+  187  git log
+  188  git branch -a
