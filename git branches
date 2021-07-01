@@ -28,3 +28,17 @@ How to create branches
   186  git branch
   187  git log
   188  git branch -a
+  
+  git branch merging
+  197  git branch
+  198  git checkout master
+  199  git branch
+  200  git merge calc-divide
+  201  git push -u origin master
+  202  git branch -a
+  203  git pull
+  204  git branch -d calc-divide
+  205  git branch -a
+  206  git pull
+  207  git push origin --delete calc-divide
+
