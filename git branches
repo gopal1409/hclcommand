@@ -42,3 +42,16 @@ How to create branches
   206  git pull
   207  git push origin --delete calc-divide
 
+git ammend
+ 210  touch secretfile
+  211  git status
+  212  ls
+  213  git add .
+  214  git status
+  215  git commit -m "secret file by mistake added"
+  216  git log
+  217  git reset
+  218  git status
+  219  git commit --amend
+  220  git log
+  221  history
