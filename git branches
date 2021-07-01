@@ -55,3 +55,28 @@ git ammend
   219  git commit --amend
   220  git log
   221  history
+  
+  git merge conflict
+   223  echo "This is an README file" > Readme.md
+  224  cat Readme.md
+  225  git add Readme.md
+  226  git commit -m "README file added"
+  227  git status
+  228  git checkout -b "branch_to_create_merge_conflict"
+  229  git branch
+  230  vi Readme.md
+  231  git add Readme.md
+  232  git commit -m "Edit made to readme on the branch"
+  233  git checkout master
+  234  vi Readme.md
+  235  git add .
+  236  git commit -m "Edit made on the readme on master branch"
+  237  git branch
+  238  git merge branch_to_create_merge_conflict
+  239  cate Readme.md
+  240  cat Readme.md
+  241  vi Readme.md
+  242  git status
+  243  git merge --abort
+  244  git status
+
