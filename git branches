@@ -1,0 +1,12 @@
+ 158  mkdir branchingproject
+  159  cd branchingproject/
+  160  touch DS_Store
+  161  touch Calcy.py
+  162  git init
+  163  git add .
+  164  git commit -m "framework for calcy project"
+  165  git log
+  166  vi Calcy.py
+  167  git add .
+  168  git commit -m "Branching Project started"
+  169  git log
