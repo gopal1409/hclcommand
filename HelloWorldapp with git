@@ -4,8 +4,8 @@
    24  vi HelloWorld.java
    25  git init
     28  git add .
+    34  git commit -m "helloworl app"
     31  git remote add origin https://github.com/gopal1409/helloworldhcl.git
    32  git push -u origin master
-   33  git branch
-   34  git commit -m "helloworl app"
-   35  git push -u origin master
+   
+   
