@@ -1,0 +1,10 @@
+9  yum install jre
+   10  yum install wget -y
+   11  wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+   12  rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+   13  yum install jenkins java-11-openjdk-devel
+   14  systemctl daemon-reload
+
+   16  systemctl start jenkins
+   17  systemctl enable jenkins
+   18  systemctl status jenkins
