@@ -1,0 +1,8 @@
+103  yum install -y yum-utils
+  104  yum-config-manager     --add-repo     https://download.docker.com/linux/centos/docker-ce.repo
+  105  yum install docker-ce docker-ce-cli containerd.io
+  106  systemctl start docker
+  107  systemctl enable docker
+  108  systemctl status docker
+  109  docker --version
+  110  history
