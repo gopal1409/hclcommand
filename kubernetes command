@@ -1,0 +1,4 @@
+411  kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0
+  412  kubectl get pod
+  413  kubectl describe pod my-first-pod
+  
