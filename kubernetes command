@@ -2,3 +2,13 @@
   412  kubectl get pod
   413  kubectl describe pod my-first-pod
   
+  How to expose your pod 
+  418  kubectl get svc
+  419  kubectl expose pod my-first-pod --type=NodePort --port=80 --name=my-first-service
+  421  kubectl get svc
+  422  kubectl get pod
+  423  kubectl get pod -o wide
+  424  kubectl get svc
+  425  kubectl describe svc my-first-service
+
+  
