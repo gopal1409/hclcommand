@@ -10,5 +10,13 @@
   423  kubectl get pod -o wide
   424  kubectl get svc
   425  kubectl describe svc my-first-service
+  
+  How to run a yaml file
+   437  git pull
+  438  kubectl apply -f pod.yml
+  439  kubectl get pod
+  440  kubectl edit pod my-first-pod
+  441  kubectl edit pod myapp-pod
+
 
   
