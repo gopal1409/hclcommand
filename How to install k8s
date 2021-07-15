@@ -19,9 +19,13 @@ gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cl
 exclude=kubelet kubeadm kubectl
 EOF
 
-  387  sudo setenforce 0
-  388  sudo sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
-  389  sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
-  390  sudo systemctl enable --now kubelet
-  391  kubeadm
-  392  history
+
+  394  kubeadm init --pod-network-cidr=10.244.0.0/16
+  395   mkdir -p $HOME/.kube
+  396    sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  397    sudo chown $(id -u):$(id -g) $HOME/.kube/config
+  398  kubectl get nodes
+  399  kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+  400  kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/k8s-manifests/kube-flannel-rbac.yml
+  401  kubectl get nodes
+
