@@ -17,6 +17,16 @@
   439  kubectl get pod
   440  kubectl edit pod my-first-pod
   441  kubectl edit pod myapp-pod
+  
+  How to delete a pod and service
+  448  kubectl get pod
+  449  kubectl delete pod my-first-pod
+  450  kubectl get pod
+  451  kubectl delete -f pod.yml
+  452  kubectl get svc
+  453  kubectl describe svc
+  454  kubectl get svc
+  455  kubectl delete svc my-first-service
 
 
   
