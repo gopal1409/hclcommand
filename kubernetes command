@@ -41,6 +41,15 @@ Kubernete describe pod replicaset and deployment
   495  kubectl describe pod nginx-deployment-66b6c48dd5-69d57
   496  kubectl get rs
   497  kubectl describe rs nginx-deployment-66b6c48dd5
+  
+  exposing with internal load balancer
+  499  kubectl get deploy
+  500  kubectl expose deploy nginx-deployment --type=NodePort --port=80 --name=nginx-service
+  501  kubectl get svc
+  
+  503  kubectl describe svc nginx-service
+  504  kubectl get pod -o wide
+
 
 
 
