@@ -49,6 +49,14 @@ Kubernete describe pod replicaset and deployment
   
   503  kubectl describe svc nginx-service
   504  kubectl get pod -o wide
+How tio update your images
+ 509  kubectl edit deploy nginx-deployment
+  510  vi deploy.yml
+  511  kubectl set image deployment nginx-deployment nginx=piuma/phpsysinfo --record
+  512  kubectl get deploy
+  513  kubectl get rs
+  514  kubectl get pod
+  515  kubectl get pod -o wide
 
 
 
