@@ -27,6 +27,14 @@
   453  kubectl describe svc
   454  kubectl get svc
   455  kubectl delete svc my-first-service
+  
+  How to do the deployment
+  473  cd HCLK8smanifest/
+  474  git pull
+  475  kubectl apply -f deploy.yml
+ 480  kubectl get deploy
+  481  kubectl get pod
+
 
 
   
