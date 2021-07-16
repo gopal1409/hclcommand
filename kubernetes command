@@ -35,6 +35,13 @@
  480  kubectl get deploy
   481  kubectl get pod
 
+Kubernete describe pod replicaset and deployment
+ 493  kubectl describe deploy nginx-deployment
+  494  kubectl get pod
+  495  kubectl describe pod nginx-deployment-66b6c48dd5-69d57
+  496  kubectl get rs
+  497  kubectl describe rs nginx-deployment-66b6c48dd5
+
 
 
   
