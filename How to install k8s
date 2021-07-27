@@ -18,6 +18,10 @@ repo_gpgcheck=1
 gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
 exclude=kubelet kubeadm kubectl
 EOF
+ 1003  sudo setenforce 0
+ 1004  sudo sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
+ 1005  sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
+ 1006  sudo systemctl enable --now kubelet
 
 
   394  kubeadm init --pod-network-cidr=10.244.0.0/16
